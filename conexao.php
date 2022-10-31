@@ -33,4 +33,27 @@
                 echo "<span style='color:red;'>Erro: Horário não cadastrado!</span><br>";
             }
         }
+
+        $query_horarios = "SELECT id, entrada, saida, data_cadastro FROM horarios ORDER BY id DESC";
+        $resu_horarios = $conn->prepare($query_horarios);
+        $resu_horarios->execute();
+    
+        while ($row_horario = $resu_horarios->fetch(PDO::FETCH_ASSOC)) {
+            extract($row_horario);
+            echo "ID: $id <br>";
+            echo "Data de cadastro: $data_cadastro <br>";
+            echo "Horário de entrada: $entrada <br>";
+            echo "Horário de saida: $saida <br>";
+    
+            
+    
+            $entrada = DateTime::createFromFormat('H:i:s', $entrada);
+            $saida = DateTime::createFromFormat('H:i:s', $saida);
+    
+            $intervalo = $entrada->diff($saida);
+    
+    
+            echo "Horario final:" . $intervalo->format('%H:%I:%S') . "<br>";
+            echo "<hr>";
+        }
 ?>
