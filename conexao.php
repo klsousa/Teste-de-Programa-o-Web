@@ -51,9 +51,11 @@
             $saida = DateTime::createFromFormat('H:i:s', $saida);
     
             $intervalo = $entrada->diff($saida);
+
+            
     
     
-            echo "Horario final:" . $intervalo->format('%H:%I:%S') . "<br>";
+            echo "período trabalhado:" . $intervalo->format('%H:%I:%S') . "<br>";
             echo "<hr>";
         }
 ?>

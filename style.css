@@ -1,0 +1,24 @@
+body{
+    background-color:  #f2f2f29a;
+}
+.btn{
+    background-color: #04e63c;
+	border-radius: 10px;	
+    color: #fff;
+    font-size: 14px;
+    margin-top: 10px;
+   
+}
+.conteudo{
+    right: 50px;  
+	z-index:1000;
+	width:250px;
+	background-color: #fff;
+    -webkit-border-radius: 00px 0px 0px 0px;
+	border-radius: 0px 0px 0px 0px;
+	-webkit-box-shadow: 3px 3px 5px 2px #D1D1D1;
+	box-shadow: 3px 3px 5px 2px #D1D1D1;
+	padding: 10px
+    
+	
+}
