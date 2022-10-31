@@ -16,16 +16,19 @@ include_once "conexao.php"
 <body>
     <h2>Registrar horario</h2>
     <div>
-    <div class="conteudo">
-    <form method="POST" action="">
-        <label>Horario de entrada</label>
-        <input type="time" name="entrada" value="" required><br><br>
-        <label>Horario de saida</label>
-        <input type="time" name="saida" required><br>
-        <input class="btn" type="submit" value="Cadastra" name="CadHorario">
+        <div class="conteudo">
+            <form method="POST" action="">
+                <label>Horario de entrada</label>
+                <input type="time" name="entrada" value="" required><br><br>
+                <label>Horario de saida</label>
+                <input type="time" name="saida" required><br>
+                <input class="btn" type="submit" value="Cadastra" name="CadHorario">
+        </div>
+        </form>
     </div>
-
-    </form>
-    </div>
+    <script>
+        window.location
+    </script>
 </body>
+
 </html>
